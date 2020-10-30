@@ -45,6 +45,7 @@ $color-primary: #191E2B;
             align-content: center;
             background-color: $color-top;
             //top: 20px;
+            width:100%;
             img.files{
                 margin: 0 auto;
                 //width: 100%;
@@ -118,7 +119,9 @@ $color-primary: #191E2B;
                         width:30%;
                     }
                 }
-        
+            img{
+                width:30%;  
+            }    
             }
 
         }
