@@ -4,7 +4,7 @@
 }
 
 .main_container {
-  background-color: #1A2330;
+  background-color: #191E2B;
   width: 100%;
   margin: 0;
   display: -webkit-box;
@@ -24,7 +24,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 3em 2em;
+  padding: 3em 2em;
+  background-color: #1A2330;
 }
 
 .main_container .menu .icon {
@@ -67,48 +68,50 @@
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
+  background-color: #1A2330;
 }
 
 .main_container .get_starter .contentImages img.files {
   margin: 0 auto;
   z-index: 1;
-  width: 60%;
+  width: 90%;
 }
 
 .main_container .get_starter .contentImages img.mountain {
   position: absolute;
-  top: 0px;
+  top: 428px;
   width: 100%;
   z-index: 0;
+  background-color: #1A2330;
 }
 
 .main_container .get_starter .getStarterButton {
-  height: 2em;
-  width: 50%;
+  height: 5em;
+  width: 60%;
   background-color: #4CC1D3;
   background-image: -webkit-gradient(linear, left top, right top, );
   background-image: linear-gradient(to right);
   border: none;
   border-radius: 50px;
   color: #fff;
-  margin: 0px auto;
+  margin: 30px auto;
   z-index: 1;
-  font-size: 6px;
+  font-size: 1em;
 }
 
 .main_container .get_starter p {
   color: #fff;
   text-align: center;
   font-size: 3em;
-  margin-top: 90px;
+  margin-top: 70px;
   line-height: 1.5;
   z-index: 2;
-  width: 85%;
+  width: 90%;
 }
 
 .main_container .get_starter p.last {
   font-weight: lighter;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .main_container .sections {
@@ -119,25 +122,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #191E2B;
   margin-top: 14px;
   padding-top: 50px;
 }
 
-.main_container .sections section.iconsSection p {
-  text-align: center;
-  color: #fff;
+.main_container .sections .iconsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
 }
 
-.main_container .sections section.iconsSection p .center {
+.main_container .sections .iconsSection p {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+}
+
+.main_container .sections .iconsSection p .center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main_container .sections .iconsSection p .center.icon1 {
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */
