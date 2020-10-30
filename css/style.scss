@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main_container{
+    background-color: #1A2330;
+    width: 100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+img.icon{
+    width:55px ;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+}
+.navMenu a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 8px;
+    font-weight: lighter;
+}
+.get_starter .files{
+    margin: 0 auto;
+}
+.get_starter img{
+  width: 100%;
+  margin: 20px;
+}
+.get_starter p{
+    color:#fff;
+    text-align: center;
+    font-size: 14px;
+}
+.get_starter p:last-child{
+    font-weight: lighter;
+    font-size: 12px;
+}
+.contentImages{
+    position: relative;
+
+}
+.files{
+    position: relative;
+    z-index: 1;
+}
+.get_starter .contentImages .mountain{
+    position: absolute;
+    left: 0;
+    top:120px;
+    margin: 0;
+    z-index: 0;
+}
+.title{
+    z-index:2;
+}
