@@ -32,21 +32,27 @@ img.icon{
   margin: 20px;
 }
 .get_starter p{
-    color:#fff;
+    color: #fff;
     text-align: center;
     font-size: 14px;
+    margin: 29px 14px;
+    line-height: 1.5;
 }
-.get_starter p:last-child{
+.get_starter p.last{
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 9px;
 }
 .contentImages{
     position: relative;
+    display: flex;
+    top: 20px;
 
 }
-.files{
+.contentImages .files{
     position: relative;
     z-index: 1;
+    width: 90%;
+
 }
 .get_starter .contentImages .mountain{
     position: absolute;
@@ -55,6 +61,12 @@ img.icon{
     margin: 0;
     z-index: 0;
 }
-.title{
-    z-index:2;
+ .get_starter.getStarterButton{
+    height: 50px;
+    background-color: $color-primary;
+    background-image: linear-gradient(to right);
+    border:none;
+    border-radius: 50px;
+    color: $color-white;
 }
+

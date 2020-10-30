@@ -51,20 +51,27 @@ img.icon {
   color: #fff;
   text-align: center;
   font-size: 14px;
+  margin: 29px 14px;
+  line-height: 1.5;
 }
 
 .get_starter p:last-child {
   font-weight: lighter;
-  font-size: 12px;
+  font-size: 9px;
 }
 
 .contentImages {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 20px;
 }
 
-.files {
+.contentImages .files {
   position: relative;
   z-index: 1;
+  width: 90%;
 }
 
 .get_starter .contentImages .mountain {
@@ -73,9 +80,5 @@ img.icon {
   top: 120px;
   margin: 0;
   z-index: 0;
-}
-
-.title {
-  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */
