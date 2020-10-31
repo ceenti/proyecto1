@@ -1,7 +1,9 @@
 $color-top: #1A2330;
 $color-button: #4CC1D3;
 $color-white: #fff;
-$color-primary: #191E2B;
+$color-primary: #18202B;
+$color-link: #61D3CF;
+$color-bio: #212A3D;
 *{
     margin:0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,6 +21,7 @@ $color-primary: #191E2B;
         justify-content: space-between;
         padding: 3em 2em;
         background-color: $color-top;
+        vertical-align: bottom;
         .icon{
             width:20% ;
             height: 20%;
@@ -28,8 +31,11 @@ $color-primary: #191E2B;
         .navMenu a{
             text-decoration: none;
             color:#fff;
-            font-size: 1em;
+            font-size: 1.7em;
             font-weight: lighter;
+            margin-right: 2em;
+            position: relative;
+            top: 30px;
         }
     }
     .get_starter {
@@ -45,18 +51,19 @@ $color-primary: #191E2B;
             align-content: center;
             background-color: $color-top;
             //top: 20px;
+            width:100%;
             img.files{
-                margin: 0 auto;
+                margin: 48px auto;
                 //width: 100%;
                 //margin: 20px;
                 //position: relative;
                 z-index: 1;
-                width: 90%;
+                width: 75%;
             }
             img.mountain{
                 position: absolute;
                 //left: 0;
-                top: 428px;
+                top: 35em;
                 width: 100%;
                 z-index: 0;
                 background-color: $color-top;
@@ -65,7 +72,7 @@ $color-primary: #191E2B;
             
         }
         .getStarterButton {
-            height: 5em;
+            height: 3.5em;
             width: 60%;
             background-color: $color-button;
             background-image: linear-gradient(to right);
@@ -74,21 +81,23 @@ $color-primary: #191E2B;
             color: $color-white;
             margin: 30px auto;
             z-index: 1;
-            font-size: 1em;
+            font-size: 2em;
             //margin: 20px;
             
         }  
         p{
             color: #fff;
             text-align: center;
-            font-size: 3em;
-            margin-top: 70px;
+            font-size: 4em;
+            margin: 45px auto;
             line-height: 1.5;
             z-index: 2;
-            width:90%;
+            width:85%;
         &.last{
             font-weight: lighter;
             font-size: 2em;
+            line-height: 1.5em;
+            width: 68%;
 
         }
         }
@@ -97,7 +106,7 @@ $color-primary: #191E2B;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #191E2B;
+        background-color:$color-primary;
         margin-top: 14px;
         padding-top: 50px;
 
@@ -105,23 +114,138 @@ $color-primary: #191E2B;
         .iconsSection{
             display: flex;
             flex-direction: column;
-            width: 90%;
+            width: 70%;
+            margin: 5em;
             p{
                 text-align: center;
                 color: $color-white;
-                font-size:2em;
+                font-size:1.5em;
 
-                .center{
+                &.center{
                     display: flex;
                     justify-content: center;
                     &.icon1{
                         width:30%;
+                    } 
+                }
+                &.stay{
+                    position: relative;
+                    width: 90%;
+                }
+                &.iconTitle{
+                    margin: 30px;
+                    font-size: 3em;
+                    line-height: 2em;;
+                }
+                &.description{
+                    font-size: 2em;
+                    line-height: 1.7em;
+                }
+            
+            img{
+                width:20%;
+                 margin: 30px auto; 
+            }    
+            }
+            &.bigger{
+                width: 85%;
+                display: flex;
+                align-items: center;
+                p{
+                    line-height: 1.7em;
+                    text-align: left;
+                    white-space: normal;
+                }
+                .center{
+                  &.stay{
+                      .icon2{
+                          width: 100%;;
+                      }
+                  }  
+                }
+                .iconTitle{
+                 
+                  font-size: 2.7em;  
+                }
+                .fyloWorks{
+                    text-decoration: none;
+                    text-align: left;
+                    font-size: 2em;
+                    color: $color-link;
+                    font-weight: 100;
+                    padding: 6px;
+                    padding-bottom: 10px;
+                    align-self: flex-start;
+                    border-bottom: 3px solid $color-link;
+                    line-height: 1.5em;
+                    img{
+                        width: 1.3em;
+                        line-height: 1.5em;
                     }
                 }
-        
             }
-
         }
      
+    }
+    .comments{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+        color: $color-white;
+        margin-top: 30px;
+
+        article {
+            width: 70%;
+            border: 1px solid $color-top;
+            background-color: $color-bio;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px;
+            text-align: center;
+
+            p{
+                line-height: 1.8em;
+                text-align: justify;
+                font-size: 1.5em;
+                font-weight: lighter;
+            }
+
+            & > div {
+                display: flex;   
+                padding: 10px 0px;
+            }
+
+            span {
+                line-height: 1.5em;
+            }
+            span.title {
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+
+            .user-info {
+                display: inline-block;
+                align-self: stretch;
+                flex-direction: column;
+
+                span {
+                    display: block;
+                    text-align: left;
+                    padding: 5px 10px;
+                }
+            }
+
+            .avatar {
+                margin: 5px;
+                border-radius: 100%;
+                display: inline-block;
+                overflow: hidden;
+
+                img {
+                    height: 60px;
+                }
+            }
+        }
     }
 }
