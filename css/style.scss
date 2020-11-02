@@ -4,6 +4,8 @@ $color-white: #fff;
 $color-primary: #18202B;
 $color-link: #61D3CF;
 $color-bio: #212A3D;
+$color-negro: #0C1524;
+$color-claro: #cecece;
 
 body{
     font-size: 18px;
@@ -38,7 +40,7 @@ p{
                 z-index: 2;
                 margin: 0 auto;
                 display: block;
-                top:50px;
+                top:20px;
             }
 
             .mountain{
@@ -46,18 +48,23 @@ p{
                 z-index: 1;
                 width: 100%;
                 height: 10em;
+                bottom: 0;
+                margin-bottom: -1px;
+
             }
 
             .title{
                 position: relative;
                 z-index: 1;
                 text-align: center;
-                font-size:2em ;
+                font-size:1em ;
                 font-weight: 500;
                 line-height: 1.5em;
-                top: 2.5em ;
+                top: 0;
                 width: 85%;
                 margin: 0 auto;
+                margin-top: 75px;
+
 
         
 
@@ -69,23 +76,22 @@ p{
             position: relative;
             z-index: 1;
             text-align: center;
-            font-size: 1.2em ;
-            font-weight: 500;
+            font-size: 0.7em;            font-weight: 500;
             line-height: 1.8em;
-            top: 5em ;
+            top: 35px;
             clear: both;
         }
 
         .getStarterButton{
             position: relative;
-            height: 4em;
+            height: 3em;
             width: 60%;
             background-color: $color-button;
             background-image: linear-gradient(to right);
             border:none;
             border-radius: 50px;
             color: $color-white;
-            margin: 30px auto;
+            margin: -42px auto;
             z-index: 1;
             font-size: 1em;
             padding: 5px;
@@ -166,13 +172,13 @@ p{
     .comments{
             display: flex;
             flex-direction: column;
-            padding-top:170px;
+            padding-top:100px;
             align-items: center;
             width: 80%;
             text-align: left;
             margin: 0 auto;
-            font-size: .9em;
-            margin-bottom: 150px;
+            font-size: .8rem;
+            margin-bottom: 100px;
 
             .comillas{
                 max-width: 100%;
@@ -212,9 +218,64 @@ p{
                 }
             }
     }
+    .form
+    {
+        margin: 0 auto;
+        background-color: $color-top;
+        border:1px solid $color-top; 
+        width: 80%;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
+        position: relative;
+
+        form.send{
+            text-align: center;
+            line-height: 2em;
+            .first{
+                font-size: .8em;
+                font-weight: 500;
+                margin: 20px auto;
+            }
+            .second{
+                font-size: .6em;
+
+            }
+            .email{
+                height: 3.3em;
+                width: 80%;
+                border-radius: 50px;
+                border:none;
+                font-size: .5em;
+                padding: 6px;
+                color: $color-claro;
+                text-align: center;
+                margin-top: 20px;
+             &::placeholder{
+                color: $color-claro;
+             }   
+
+            }
+            .getStarterButton{
+                position: relative;
+                height: 3.3em;
+                width: 80%;
+                background-color: $color-button;
+                background-image: linear-gradient(to right);
+                border:none;
+                border-radius: 50px;
+                color: $color-white;
+                margin: 25px auto;
+                z-index: 1;
+                font-size: .7em;
+                padding: 5px;
+                top: 0px;  
+            }
+        }
+    }
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -228,14 +289,19 @@ header{
         text-decoration: none;
         color: $color-white;
         font-weight: 100;
-        font-size: .7em;
-        margin-left: 20px;
+        font-size: .6em;
+        margin-left: 10px;
 
     }
 }
 footer{
     padding: 35px;
-    background-color: $color-primary;
+    padding-top: 140px;
+    background-color: $color-negro;
+    font-size: .8em;
+    margin-top: -162px;
+
+
     .logo_footer{
         img {
           width: 45%; 
@@ -268,8 +334,7 @@ footer{
         a{
             text-decoration: none;
             line-height: 45px;
-            font-size: 1.3em;
-
+            cursor: pointer;
         }
 
     }

@@ -42,7 +42,7 @@ p {
   z-index: 2;
   margin: 0 auto;
   display: block;
-  top: 50px;
+  top: 20px;
 }
 
 .main_container .intro .contentImages .mountain {
@@ -50,18 +50,21 @@ p {
   z-index: 1;
   width: 100%;
   height: 10em;
+  bottom: 0;
+  margin-bottom: -1px;
 }
 
 .main_container .intro .contentImages .title {
   position: relative;
   z-index: 1;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 500;
   line-height: 1.5em;
-  top: 2.5em;
+  top: 0;
   width: 85%;
   margin: 0 auto;
+  margin-top: 75px;
 }
 
 .main_container .intro .last {
@@ -69,16 +72,16 @@ p {
   position: relative;
   z-index: 1;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 0.7em;
   font-weight: 500;
   line-height: 1.8em;
-  top: 5em;
+  top: 35px;
   clear: both;
 }
 
 .main_container .intro .getStarterButton {
   position: relative;
-  height: 4em;
+  height: 3em;
   width: 60%;
   background-color: #4CC1D3;
   background-image: -webkit-gradient(linear, left top, right top, );
@@ -86,7 +89,7 @@ p {
   border: none;
   border-radius: 50px;
   color: #fff;
-  margin: 30px auto;
+  margin: -42px auto;
   z-index: 1;
   font-size: 1em;
   padding: 5px;
@@ -186,15 +189,15 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 170px;
+  padding-top: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
   text-align: left;
   margin: 0 auto;
-  font-size: .9em;
-  margin-bottom: 150px;
+  font-size: .8rem;
+  margin-bottom: 100px;
 }
 
 .main_container .comments .comillas {
@@ -245,6 +248,78 @@ p {
   font-weight: bolder;
 }
 
+.main_container .form {
+  margin: 0 auto;
+  background-color: #1A2330;
+  border: 1px solid #1A2330;
+  width: 80%;
+  border-radius: 8px;
+  padding: 15px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.main_container .form form.send {
+  text-align: center;
+  line-height: 2em;
+}
+
+.main_container .form form.send .first {
+  font-size: .8em;
+  font-weight: 500;
+  margin: 20px auto;
+}
+
+.main_container .form form.send .second {
+  font-size: .6em;
+}
+
+.main_container .form form.send .email {
+  height: 3.3em;
+  width: 80%;
+  border-radius: 50px;
+  border: none;
+  font-size: .5em;
+  padding: 6px;
+  color: #cecece;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main_container .form form.send .email::-webkit-input-placeholder {
+  color: #cecece;
+}
+
+.main_container .form form.send .email:-ms-input-placeholder {
+  color: #cecece;
+}
+
+.main_container .form form.send .email::-ms-input-placeholder {
+  color: #cecece;
+}
+
+.main_container .form form.send .email::placeholder {
+  color: #cecece;
+}
+
+.main_container .form form.send .getStarterButton {
+  position: relative;
+  height: 3.3em;
+  width: 80%;
+  background-color: #4CC1D3;
+  background-image: -webkit-gradient(linear, left top, right top, );
+  background-image: linear-gradient(to right);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  margin: 25px auto;
+  z-index: 1;
+  font-size: .7em;
+  padding: 5px;
+  top: 0px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,13 +339,16 @@ header .navMenu a {
   text-decoration: none;
   color: #fff;
   font-weight: 100;
-  font-size: .7em;
-  margin-left: 20px;
+  font-size: .6em;
+  margin-left: 10px;
 }
 
 footer {
   padding: 35px;
-  background-color: #18202B;
+  padding-top: 140px;
+  background-color: #0C1524;
+  font-size: .8em;
+  margin-top: -162px;
 }
 
 footer .logo_footer img {
@@ -323,6 +401,6 @@ footer .links-left :last-child {
 footer .links-left a {
   text-decoration: none;
   line-height: 45px;
-  font-size: 1.3em;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
