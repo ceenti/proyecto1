@@ -7,8 +7,27 @@ $color-bio: #212A3D;
 $color-negro: #0C1524;
 $color-claro: #cecece;
 
-body{
-    font-size: 18px;
+html{
+    font-size: 16px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $color-top;
+    .logo{
+        img{
+            width: 100px;
+        }
+    }
+    .navMenu a{
+        text-decoration: none;
+        color: $color-white;
+        font-weight: 100;
+        font-size: .6em;
+        margin-left: 10px;
+
+    }
 }
 p{
     line-height: 1.7em;
@@ -76,10 +95,11 @@ p{
             position: relative;
             z-index: 1;
             text-align: center;
-            font-size: 0.7em;            font-weight: 500;
+            font-size: 0.7em;            
             line-height: 1.8em;
             top: 35px;
             clear: both;
+            font-weight: 500;
         }
 
         .getStarterButton{
@@ -115,7 +135,7 @@ p{
             flex-direction: column;
             justify-content: center;
             line-height: 1.5em;
-            font-size: 1em;
+            font-size: .6em;
                 
             .center{
                 padding-bottom: 30px;
@@ -194,6 +214,7 @@ p{
                 border-radius: 8px;
                 p{
                     margin-bottom: 15px;
+                    font-size: 0.7em;
                 }
                 .personInfo{
                     display: flex;
@@ -209,7 +230,9 @@ p{
                         display: flex;
                         flex-direction: column;
                         margin-left: 10px;
-                        line-height: 25px;
+                        line-height: 17px;
+                        font-size: .7em;
+                        justify-content: center;
                         .title{
                             font-weight: bolder;
                         }
@@ -275,30 +298,12 @@ p{
     }
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: $color-top;
-    .logo{
-        img{
-            width: 100px;
-        }
-    }
-    .navMenu a{
-        text-decoration: none;
-        color: $color-white;
-        font-weight: 100;
-        font-size: .6em;
-        margin-left: 10px;
 
-    }
-}
 footer{
     padding: 35px;
     padding-top: 140px;
     background-color: $color-negro;
-    font-size: .8em;
+    font-size: .7em;
     margin-top: -162px;
 
 
@@ -337,5 +342,112 @@ footer{
             cursor: pointer;
         }
 
+    }
+}
+@media screen and (min-width: 768px){
+    html{
+        font-size: 24px;
+    }
+    .main_container{
+         
+        .intro{
+            
+            .contentImages{
+                width: 100%;
+                .files{
+                    width: 70%; 
+                    bottom: -12px; 
+                }
+                .mountain{
+                    height: 15em;
+                    margin-bottom: 0;
+                }
+    
+                .title{
+                    width: 76%; 
+                    font-size: 2.5em;
+                    margin-top: 159px;
+                }
+            }
+    
+            .last{
+                font-size: 1em;
+                width: 59%;
+            }
+    
+            .getStarterButton{
+                width: 40%;
+            }
+        }
+    
+        .sections{
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-evenly;
+             flex-wrap: wrap;
+
+            .iconsSection{
+                flex: 50%;
+                .center{
+                    .icon1{
+
+                    }
+                }
+
+                p {
+                    padding: 0 30px;
+                }
+
+                .iconTitle{
+                    font-size: 1.8em;
+                    display: inline-block;
+                }
+
+                .description{
+                    font-size: 1.2em;
+                }
+
+                 &.bigger{
+         
+                    .center{
+                        &.stay{
+                            .icon2{
+                     
+                            }
+                        }
+                    }
+                    .iconTitle  {
+
+                    }
+
+                    .description{
+
+                    }
+
+                    .fyloWorks{
+
+
+                        img{
+                    
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }    
+
+    header {
+        padding: 50px 35px;
+        .logo{
+            img{
+                width: 300px;
+            }
+        }
+        .navMenu a{
+            font-size: 1.5em;
+
+        }
     }
 }

@@ -1,5 +1,28 @@
-body {
-  font-size: 18px;
+html {
+  font-size: 16px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: #1A2330;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+header .navMenu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+  font-size: .6em;
+  margin-left: 10px;
 }
 
 p {
@@ -73,10 +96,10 @@ p {
   z-index: 1;
   text-align: center;
   font-size: 0.7em;
-  font-weight: 500;
   line-height: 1.8em;
   top: 35px;
   clear: both;
+  font-weight: 500;
 }
 
 .main_container .intro .getStarterButton {
@@ -127,7 +150,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 1.5em;
-  font-size: 1em;
+  font-size: .6em;
 }
 
 .main_container .sections .iconsSection .center {
@@ -218,6 +241,7 @@ p {
 
 .main_container .comments article p {
   margin-bottom: 15px;
+  font-size: 0.7em;
 }
 
 .main_container .comments article .personInfo {
@@ -241,7 +265,11 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 10px;
-  line-height: 25px;
+  line-height: 17px;
+  font-size: .7em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main_container .comments article .personInfo .user-info .title {
@@ -320,34 +348,11 @@ p {
   top: 0px;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 15px;
-  background-color: #1A2330;
-}
-
-header .logo img {
-  width: 100px;
-}
-
-header .navMenu a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 100;
-  font-size: .6em;
-  margin-left: 10px;
-}
-
 footer {
   padding: 35px;
   padding-top: 140px;
   background-color: #0C1524;
-  font-size: .8em;
+  font-size: .7em;
   margin-top: -162px;
 }
 
@@ -402,5 +407,70 @@ footer .links-left a {
   text-decoration: none;
   line-height: 45px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 24px;
+  }
+  .main_container .intro .contentImages {
+    width: 100%;
+  }
+  .main_container .intro .contentImages .files {
+    width: 70%;
+    bottom: -12px;
+  }
+  .main_container .intro .contentImages .mountain {
+    height: 15em;
+    margin-bottom: 0;
+  }
+  .main_container .intro .contentImages .title {
+    width: 76%;
+    font-size: 2.5em;
+    margin-top: 159px;
+  }
+  .main_container .intro .last {
+    font-size: 1em;
+    width: 59%;
+  }
+  .main_container .intro .getStarterButton {
+    width: 40%;
+  }
+  .main_container .sections {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main_container .sections .iconsSection {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .main_container .sections .iconsSection p {
+    padding: 0 30px;
+  }
+  .main_container .sections .iconsSection .iconTitle {
+    font-size: 1.8em;
+    display: inline-block;
+  }
+  .main_container .sections .iconsSection .description {
+    font-size: 1.2em;
+  }
+  header {
+    padding: 50px 35px;
+  }
+  header .logo img {
+    width: 300px;
+  }
+  header .navMenu a {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
