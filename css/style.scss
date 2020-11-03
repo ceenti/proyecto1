@@ -42,7 +42,6 @@ p{
 
 .main_container{
     background-color: $color-primary;
-     
     .intro{
         display: flex;
         flex-direction: column;
@@ -212,6 +211,7 @@ p{
                 background-color: $color-bio;
                 margin-bottom: 30px;
                 border-radius: 8px;
+                box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.2);
                 p{
                     margin-bottom: 15px;
                     font-size: 0.7em;
@@ -297,9 +297,11 @@ p{
         }
     }
 }
+.foot-desktop{
+    display: none;
+}
 
-
-footer{
+.foot-mobile{
     padding: 35px;
     padding-top: 140px;
     background-color: $color-negro;
@@ -345,18 +347,29 @@ footer{
     }
 }
 @media screen and (min-width: 768px){
-    html{
-        font-size: 24px;
+    body{
+        background-color: $color-negro;
     }
+    html{
+        font-size: 16px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    a{
+        text-decoration: none;
+    }
+
+
     .main_container{
+      
          
         .intro{
             
             .contentImages{
                 width: 100%;
                 .files{
-                    width: 70%; 
-                    bottom: -12px; 
+                    width: 45%; 
+                    bottom: 0px; 
                 }
                 .mountain{
                     height: 15em;
@@ -365,8 +378,8 @@ footer{
     
                 .title{
                     width: 76%; 
-                    font-size: 2.5em;
-                    margin-top: 159px;
+                    font-size: 2em;
+                    margin-top: 95px;
                 }
             }
     
@@ -376,7 +389,7 @@ footer{
             }
     
             .getStarterButton{
-                width: 40%;
+                width: 35%;
             }
         }
     
@@ -408,46 +421,171 @@ footer{
                 }
 
                  &.bigger{
-         
+                    margin: 40px auto;
+                    display: flex;
+                    flex-direction: row;
                     .center{
                         &.stay{
+                            padding: 0px;
+                            margin-bottom: 30px;
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
                             .icon2{
                      
                             }
                         }
                     }
-                    .iconTitle  {
+                    .content-text{
+                        flex: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
 
-                    }
-
-                    .description{
-
-                    }
-
-                    .fyloWorks{
-
-
-                        img{
-                    
+                        .iconTitle  {
+                            font-size: 3em;
+                        }
+    
+                        .description{
+                            font-size: 1.5em;
+                        }
+    
+                        .fyloWorks{
+                            margin-left: 30px;
+                            font-size: 1.5em;
+                            img{
+                        
+                            }
                         }
                     }
+                    
                 }
             }
             
         }
+        .comments{
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            .comillas{
+                position: absolute;
+            }
+            article{
+                width: 25%;
+            }
+        }
+        .iconsSection{
+            width: 60%;
+            &.form{
+                .send{
+                    
+                    .first{
+                        font-size: 1.8em;
+                    }
+                    .second{
+                        font-size: .9em;
+                        padding: 0 25px;
+                    }
+                    .email{
+                        width: 55%;
+                        margin-right: 20px;
+                    }
+                    .getStarterButton{
+                        width: 23%;
+                    }
+                
+                }
+            }
+        }
+
         
     }    
 
     header {
-        padding: 50px 35px;
+        padding: 35px;
         .logo{
             img{
-                width: 300px;
+                width: 200px;
             }
         }
         .navMenu a{
-            font-size: 1.5em;
+            font-size: 1.1em;
 
+        }
+    }
+    .foot-mobile{
+        display: none;
+    }
+    .foot-desktop{
+        display: block;
+        padding: 38px;
+        padding-top: 140px;
+        background-color: #0C1524;
+        font-size: .7em;
+        margin-top: -130px;
+
+        .logo_footer{
+            margin: 50px auto;
+        }
+        .info-fylo{
+            display: flex;
+            margin: 0 0 80px 0;
+            .location{
+                flex: 30%;
+                display: flex;
+                font-size: 1.3em;
+
+               .icon{
+                margin-right: 20px;
+               } 
+            }
+            .contact-info{
+                flex: 20%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .icon{
+                    flex: 20%;
+                }
+                .icon-info{
+                    flex: 69%;
+                }
+                
+
+            }
+            .about-us{
+                flex: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+               a{
+               } 
+            }
+            .contact-us{
+                flex: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                a{
+
+                }
+            }
+            .social-media{
+                flex: 20%;
+                display: flex;
+                justify-content: space-around;
+            
+                .media-icon{
+                    img{
+                        width: 32px;
+                    }
+                        
+                }
+                
+            }
         }
     }
 }
